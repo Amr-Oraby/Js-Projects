@@ -1,0 +1,179 @@
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 900px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.container .input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.container .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.container .btns button {
+    padding: 10px;
+    width: 100px;
+    display: block;
+    border: none;
+    /* brighter red */
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+}
+
+.container .result {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Titles */
+h3 {
+    text-align: left;
+    /* lighter red */
+    width: fit-content;
+    padding: 5px 10px 5px 25px;
+    border-radius: 18px;
+    font-size: 15px;
+    color: white;
+    position: relative;
+}
+
+h3::before {
+    content: "";
+    background-color: #212121;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 9px;
+}
+
+.container .result>div {
+    width: 30%;
+    border-radius: 5px;
+}
+
+/* To-Do */
+.do {
+    background-color: #2e2e2e;
+}
+
+.doTasks h3 {
+    background-color: #2e2e2e;
+}
+
+.doTasks h3::before {
+    background-color: #b0b0b0;
+}
+
+.doTasks .tasks {
+    background-color: #1c1c1c;
+}
+
+.container .result .doTasks .tasks>div {
+    background-color: #bfbfbf;
+}
+
+/* In Progress */
+.progress {
+    background-color: #2d6a8a;
+}
+
+.progressTasks h3 {
+    background-color: #2d6a8a;
+}
+
+.progressTasks h3::before {
+    background-color: #3a90c0;
+}
+
+.progressTasks .tasks {
+    background-color: #294a5a;
+}
+
+.container .result .progressTasks .tasks>div {
+    background-color: #5d90af;
+}
+
+/* Done */
+.done {
+    background-color: #2b774e;
+}
+
+.doneTasks h3 {
+    background-color: #2b774e;
+}
+
+.doneTasks h3::before {
+    background-color: #34c480;
+}
+
+.doneTasks .tasks {
+    background-color: #224c37;
+}
+
+.container .result .doneTasks .tasks>div {
+    background-color: #6cc599;
+}
+
+/* Common Tasks Styling */
+.container .result .tasks {
+    padding: 10px;
+    border-radius: 25px;
+    min-height: 280px;
+}
+
+.container .result .tasks>div {
+    border-radius: 35px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.container .result>div>.tasks div {
+    color: white;
+}
+
+.container .result>div .tasks button {
+    color: white;
+    background-color: #e53935;
+    /* slightly brighter red */
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    outline: none;
+    border-radius: 15px;
+}

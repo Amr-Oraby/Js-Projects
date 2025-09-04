@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    min-height: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container h4 {
+    color: black;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-top: 8px;
+}
+
+.container input,
+.container button {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.container .btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.container button {
+    background-color: #1877f2;
+    color: white;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #0078d7;
+}
+
+.container .output {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 25px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.amount {
+    margin-bottom: 10px;
+}
+
+.transfer {
+    opacity: .5;
+    pointer-events: none;
+    margin-top: 10px;
+}
+
+.transfer input {
+    margin-bottom: 10px;
+}
+
+.transfer button {
+    margin-bottom: 10px;
+}

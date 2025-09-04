@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Cost Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form>
+        <h2>Fuel Cost Calculator</h2>
+        <div class="distance">
+            <h4>Trip distance (km)</h4>
+            <input type="text" placeholder="e.g 350">
+        </div>
+        <div class="efficiency">
+            <h4>Fuel efficiency (km / litr)</h4>
+            <input type="text" placeholder="e.g 14">
+        </div>
+        <div class="price">
+            <h4>Fuel price per litr</h4>
+            <input type="text" placeholder="e.g 8.00">
+        </div>
+        <input type="submit" value="Calculate">
+        <hr>
+        <div class="result">
+            <div class="fuel"></div>
+            <div class="cost"></div>
+        </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>

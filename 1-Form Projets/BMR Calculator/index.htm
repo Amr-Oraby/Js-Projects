@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMR Calc</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form class="calc">
+        <h3>BMR Calculator</h3>
+
+        <div class="gender">
+            <label>Gender</label>
+            <div class="choose">
+                <div class="male">
+                    <input type="radio" name="gender" value="male">
+                    <span>Male</span>
+                </div>
+                <div class="female">
+                    <input type="radio" name="gender" value="female">
+                    <span>Female</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="age">
+            <label>Age (years):</label><br>
+            <input type="text">
+        </div>
+
+        <div class="weight">
+            <label>Weight (Kg):</label><br>
+            <input type="text">
+        </div>
+
+        <div class="height">
+            <label>Height (cm):</label><br>
+            <input type="text">
+        </div>
+
+        <input type="submit" value="Calculate BMR">
+
+        <div class="result"></div>
+    </form>
+    <script src="main.js"> </script>
+</body>
+
+</html>

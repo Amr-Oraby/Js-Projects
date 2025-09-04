@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    font-family: "Oswald", sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+.container {
+    width: 500px;
+    height: 400px;
+    margin: 220px auto;
+    background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+    padding: 60px;
+    padding-left: 80px;
+}
+
+.container .head {
+    position: relative;
+}
+
+.container .head::before {
+    content: "";
+    background-color: #b33939;
+    width: 5px;
+    height: calc(100% - 5px);
+    position: absolute;
+    top: 10px;
+    left: -30px;
+}
+
+.container .head h1:first-child {
+    font-size: 35px;
+    color: #2d3436;
+}
+
+.container .head h1:last-child {
+    font-size: 35px;
+    color: #b33939;
+}
+
+form {
+    padding: 25px;
+    margin-left: -30px;
+    height: 100px;
+    width: 380px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+form input[type="date"] {
+    padding: 10px;
+    border-radius: 3px;
+    width: 200px;
+    border: none;
+    outline: none;
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    border: none;
+    background-color: #00b894;
+    color: white;
+    outline: none;
+    border-radius: 3px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #019875;
+}
+
+.result {
+    margin-top: 20px;
+    margin-left: -30px;
+    color: #b33939;
+    font-weight: bold;
+}

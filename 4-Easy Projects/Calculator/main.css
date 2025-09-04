@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.calc {
+    width: 400px;
+    height: 600px;
+    background-color: red;
+    margin: 100px auto;
+}
+
+.calc .display {
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+    background-color: white;
+    font-size: 30px;
+    text-align: right;
+}
+
+.calc .btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 100px);
+}
+
+.calc .btns button {
+    font-size: 20px;
+}
+
+.empty {
+    background-color: #ccc;
+}

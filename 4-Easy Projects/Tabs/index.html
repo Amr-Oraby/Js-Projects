@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <ul class="tabs">
+            <li data-cont=".one">HTML</li>
+            <li class="active" data-cont=".two">CSS</li>
+            <li data-cont=".three">JavaScript</li>
+        </ul>
+        <div class="content">
+            <div class="one">
+                <h3>HTML Basics</h3>
+                <p>
+                    HTML (HyperText Markup Language) is the standard language for creating web pages. It uses a system
+                    of
+                    elements and tags to organize content.
+                    You can use headings (&lt;h1&gt; to &lt;h6&gt;), paragraphs (&lt;p&gt;), links (&lt;a&gt;), images
+                    (&lt;img&gt;), and many other tags to build a webpage's structure.
+                    Every element can also include attributes, such as <code>id</code> and <code>class</code>, which
+                    help in
+                    styling and scripting. Without HTML, no content would appear in your browser.
+                </p>
+            </div>
+            <div class="two">
+                <h3>CSS Styling</h3>
+                <p>
+                    CSS (Cascading Style Sheets) is used to describe how HTML elements should look on screen. It
+                    controls the
+                    design, including layout, colors, fonts, spacing, and more.
+                    You can apply styles inline, inside a &lt;style&gt; tag in the HTML file, or using an external .css
+                    file.
+                    CSS allows for responsive design using media queries, flexbox, or grid systems.
+                    It also supports animations and transitions to enhance user experience. Without CSS, websites would
+                    be plain
+                    and unattractive.
+                </p>
+            </div>
+            <div class="three">
+                <h3>JavaScript Interactivity</h3>
+                <p>
+                    JavaScript is a powerful programming language that allows developers to create interactive features
+                    on
+                    websites. It runs directly in the browser and responds to user actions.
+                    You can use JavaScript to handle events like clicks and keyboard input, modify HTML content
+                    dynamically,
+                    validate forms, fetch data from APIs, and much more.
+                    Modern JavaScript supports advanced features such as ES6 syntax, modules, and async/await for
+                    smoother and
+                    more efficient development. It brings your webpage to life.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

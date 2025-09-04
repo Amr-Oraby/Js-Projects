@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e8eaf6;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    padding-bottom: 60px;
+    width: 500px;
+    max-width: 100%;
+    margin: 100px auto;
+    border-radius: 18px;
+    box-shadow: 0 0 20px 10px #d4d4d4;
+}
+
+.container h1 {
+    text-align: center;
+    color: #6366f1;
+    font-weight: 700;
+}
+
+.container .addTask {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .addTask input {
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid #6366f1;
+    outline: none;
+    width: 100%;
+    font-size: 17px;
+}
+
+.container .addTask button {
+    display: block;
+    background-color: #6366f1;
+    font-size: 27px;
+    color: white;
+    padding: 10px;
+    width: 90px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container .tasks .task {
+    box-shadow: 0 0 5px 1px #eee;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* delete and done btns  */
+
+.container .tasks .btns button {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+.container .tasks .done {
+    background-color: #34ca3d;
+    margin-right: 10px;
+}
+
+.container .tasks .delete {
+    background-color: red;
+}
+
+.doneTask {
+    text-decoration: line-through;
+    opacity: .3;
+}

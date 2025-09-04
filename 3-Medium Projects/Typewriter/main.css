@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+p {
+    width: fit-content;
+    margin: 100px auto;
+    font-size: 30px;
+    padding-right: 3px;
+    border-right: 1px solid black;
+    animation: blink .3s infinite
+}
+
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+
+    to {
+        border-color: white;
+    }
+}

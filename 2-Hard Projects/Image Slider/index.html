@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="slides">
+            <div class="slide"><img src="1.jpg"></div>
+            <div class="slide"><img src="2.jpg"></div>
+            <div class="slide"><img src="3.jpg"></div>
+            <div class="slide"><img src="4.jpg"></div>
+        </div>
+        <button data-index="0" class="btn" onclick="go(`${this.dataset.index}`)"></button>
+        <button data-index="1" class="btn" onclick="go(`${this.dataset.index}`)"></button>
+        <button data-index="2" class="btn" onclick="go(`${this.dataset.index}`)"></button>
+        <button data-index="3" class="btn" onclick="go(`${this.dataset.index}`)"></button>
+        <button class="left" onclick="leftClick()">&#9668</button>
+        <button class="right" onclick="rightClick()">&#9658</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #eee;
+}
+
+form {
+    background-color: white;
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form h2 {
+    text-align: center;
+}
+
+form h4 {
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: #707070;
+    font-size: 15px;
+}
+
+form input:not(form input[type="radio"]),
+form textarea,
+form select {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+form input[type="submit"] {
+    background-color: rgb(0, 98, 255);
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.gender>div {
+    display: inline-block;
+}
+
+form>div span {
+    color: red;
+    font-size: 13px;
+    display: none;
+}

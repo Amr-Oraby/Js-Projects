@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive NavBar</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">ORABY</div>
+        <ul class="links">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+        </ul>
+        <div class="bar" onclick="showLinks()">
+            &#9776;
+        </div>
+    </nav>
+    <div class="landing">
+
+    </div>
+    <script>
+        let links = document.querySelector(".links");
+        links.style.height = "0px";
+
+        function showLinks() {
+            if (links.style.height == "0px") {
+                links.style.height = "230px";
+            } else {
+                links.style.height = "0px";
+            }
+
+        }
+
+        window.onresize = function () {
+            if (window.innerWidth > 600) {
+                links.style.height = "";
+            } else {
+                links.style.height = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>

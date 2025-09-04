@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form action="">
+        <h2>Job Application form</h2>
+        <div class="name">
+            <h4>Full Name:</h4>
+            <input type="text" placeholder="Enter your full name">
+            <span>Name must be more than 3 characters</span>
+        </div>
+        <div class="email">
+            <h4>Email Address:</h4>
+            <input type="text" placeholder="Enter your email" required>
+        </div>
+        <div class="phone">
+            <h4>Phone Number:</h4>
+            <input type="text" placeholder="Enter your phone number">
+            <span>Phone number must be 11 digits</span>
+        </div>
+        <div class="birth">
+            <h4>Date of Birth:</h4>
+            <input type="date" name="" id="" required>
+        </div>
+        <div class="gender">
+            <h4>Gender:</h4>
+            <div class="male">
+                <input type="radio" name="gender" required id="" value="male">
+                <label for="">Male</label>
+            </div>
+            <div class="female">
+                <input type="radio" name="gender" id="" value="female">
+                <label for="">Female</label>
+            </div>
+        </div>
+        <div class="position">
+            <h4>Desired Job Position:</h4>
+            <select name="" id="" required>
+                <option value="" selected disabled>Select a job position</option>
+                <option value="designer">Designer</option>
+                <option value="developer">Developer</option>
+                <option value="manager">Manager</option>
+                <option value="analyst">Analyst</option>
+            </select>
+        </div>
+        <div class="lettter">
+            <h4>Cover Letter (Optional):</h4>
+            <textarea name="" id="" placeholder="Write your cover letter..." rows="5"></textarea>
+        </div>
+        <input type="submit" value="Submit Application">
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>

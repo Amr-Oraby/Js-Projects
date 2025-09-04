@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    background-color: white;
+    width: 500px;
+    box-shadow: 0 0 3px 3px #ddd;
+    margin: 40px auto;
+    min-height: 300px;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.container>div {
+    margin-bottom: 50px;
+}
+
+.container .game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px
+}
+
+.container .game .user {
+    transform: rotate(90deg);
+}
+
+.container .game .computer {
+    transform: rotate(-90deg) rotateY(180deg);
+}
+
+.container .game img {
+    max-width: 100%;
+    width: 80px;
+    height: 80px;
+
+}
+
+.container .result h2 {
+    text-align: center;
+}
+
+.container .choice {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .choice button {
+    display: block;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    height: 90px;
+    opacity: .3;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+
+.container .choice button:hover {
+    opacity: 1;
+}
+
+.container .choice button img {
+    width: 50px;
+}
+
+
+@keyframes jump {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-15px);
+    }
+
+    75% {
+        transform: translateX(15px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.dis {
+    pointer-events: none;
+}
+
+
+.win-effect {
+    color: lime;
+    transform: scale(1.1);
+}
+
+.lose-effect {
+    color: red;
+    transform: scale(1.1);
+}

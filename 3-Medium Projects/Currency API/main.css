@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: darkred;
+    color: white;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 3px 3px #eee;
+}
+
+.container>div {
+    padding: 20px;
+}
+
+.container>div:not(:last-child) {
+    border-bottom: 2px solid rgb(91, 14, 14);
+}
+
+.container span {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 20px;
+}

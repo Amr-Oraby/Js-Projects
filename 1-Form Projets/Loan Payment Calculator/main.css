@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #eee;
+}
+
+.container {
+    width: 500px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container h2 {
+    color: #ff5722;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.container p {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: #878787;
+    font-size: 13px;
+}
+
+.container input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+}
+
+.container h4 {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.container .rateAndTerm {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.container .rateAndTerm input {
+    width: 210px;
+}
+
+.container .btns {
+    margin-bottom: 30px;
+}
+
+.container .btns button {
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.calc {
+    background-color: #ff5722;
+    box-shadow: 0 0 3px 3px #eee;
+    width: 350px;
+    margin-right: 10px;
+    color: white;
+}
+
+.clear {
+    width: 90px;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.results>div {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.err {
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.results span {
+    font-weight: bold;
+}
